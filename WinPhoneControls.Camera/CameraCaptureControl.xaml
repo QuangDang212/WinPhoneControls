@@ -8,6 +8,16 @@
     mc:Ignorable="d">
     
     <Grid>
-
+        <Grid x:Name="CameraCaptureGrid">
+            <CaptureElement x:Name="PreviewElement" Margin="-64,0,0,0" Stretch="UniformToFill" />
+            
+            <Grid x:Name="SettingsGrid" VerticalAlignment="Center" HorizontalAlignment="Left">
+                
+            </Grid>
+            
+            <Grid x:Name="CameraButtonGrid" VerticalAlignment="Center" HorizontalAlignment="Right">
+                <AppBarButton x:Name="CameraButton" Icon="Camera" RenderTransformOrigin="0.5, 0.5" />
+            </Grid>
+        </Grid>
     </Grid>
 </UserControl>
